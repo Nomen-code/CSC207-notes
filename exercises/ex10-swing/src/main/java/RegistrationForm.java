@@ -1,4 +1,3 @@
-import java.awt.FlowLayout;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -33,15 +32,15 @@ public class RegistrationForm {
    * @return the form's root panel
    */
   public static JPanel buildForm() {
-      JPanel firstNamePanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+      JPanel firstNamePanel = new JPanel();
       firstNamePanel.add(new JLabel("First name:"));
       firstNamePanel.add(new JTextField(12));
 
-      JPanel lastNamePanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+      JPanel lastNamePanel = new JPanel();
       lastNamePanel.add(new JLabel("Last name:"));
       lastNamePanel.add(new JTextField(12));
 
-      JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+      JPanel buttonPanel = new JPanel();
       buttonPanel.add(new JButton("Submit"));
       buttonPanel.add(new JButton("Cancel"));
 
