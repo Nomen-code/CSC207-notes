@@ -35,7 +35,7 @@ class Car extends Vehicle {
 
 class ElectricCar extends Car implements Chargeable {
     - batterylevel : int
-    + public ElectricCar(make : String)
+    + ElectricCar(make : String)
     + maxSpeed() : int
     + charge() : void
 }
